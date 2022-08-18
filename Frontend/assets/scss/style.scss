@@ -1,0 +1,284 @@
+.app {
+  font-family: "Raleway", sans-serif;
+  &__navigation {
+    position: fixed;
+    height: 100vh;
+    width: 260px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    z-index: 1111;
+    background-color: #f1f1f1 !important;
+    overflow-y: scroll;
+    &__title {
+      margin: 10px 0;
+      &__item {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 45px;
+      }
+    }
+    &__form {
+      &__item {
+        padding: 10px 0px;
+        &__input {
+          margin-top: 10px;
+          padding: 10px;
+          width: 100%;
+        }
+      }
+      &__btn {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #4caf50 !important;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s linear;
+        &:hover {
+          background-color: #ccc !important;
+          color: black;
+        }
+      }
+    }
+    &__links {
+      &__wrapper {
+        list-style: none;
+        &__item {
+          &__link {
+            color: black;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            i {
+              margin-left: 10px;
+              margin-right: 15px;
+            }
+            padding: 20px 0;
+            &:hover {
+              background-color: #ccc !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__navigation__mobile {
+    display: none;
+  }
+  &__main {
+    transition: 0.3s linear;
+    padding: 0.15px 16px;
+    width: 718px;
+    background-color: #fff !important;
+    border: 1px solid lightgrey;
+    border-bottom: none;
+    margin-left: 260px;
+    &__title {
+      color: #4caf50 !important;
+      font-weight: 400;
+      font-family: inherit;
+      margin: 10px 0;
+      font-size: 30px;
+    }
+    &__images {
+      &__thumb {
+        margin-bottom: 15px;
+        img {
+          width: 100%;
+        }
+      }
+      .active__image {
+        opacity: 1 !important;
+      }
+      &__single {
+        cursor: pointer;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    &__the__space {
+      padding-top: 10px;
+      border-bottom: 1px solid lightgrey;
+      &__title {
+        margin: 10px 0;
+        &__item {
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      &__features {
+        list-style: none;
+        &__item {
+          margin: 20px 0;
+          font-size: 18px;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    &__amenities {
+      border-bottom: 1px solid lightgrey;
+      padding-top: 10px;
+      &__title {
+        margin: 10px 0;
+        &__item {
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      &__features {
+        list-style: none;
+        &__item {
+          margin: 20px 0;
+          font-size: 18px;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    &__extra__info {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid lightgrey;
+      &__title {
+        margin: 10px 0;
+        &__item {
+          padding-bottom: 10px;
+        }
+      }
+      &__content {
+        &__item {
+          line-height: 30px;
+          span {
+            margin-right: 5px;
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    &__rules {
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgrey;
+      &__title {
+        margin: 10px 0;
+        &__item {
+          padding-top: 10px;
+        }
+      }
+      &__content {
+        margin-bottom: 20px;
+        line-height: 30px;
+      }
+      &__button {
+        margin-bottom: 10px;
+        &__item {
+          border: none;
+          cursor: pointer;
+          width: 230px;
+          padding: 8px 16px;
+          font-size: 18px;
+          color: #fff !important;
+          background-color: #4caf50 !important;
+          &:hover {
+            background-color: #ccc !important;
+            color: black !important;
+          }
+        }
+      }
+    }
+    &__contact {
+      &__title {
+        margin: 10px 0;
+        &__item {
+          padding: 10px 0;
+        }
+      }
+      &__contact__links {
+        list-style: none;
+        &__item {
+          i {
+            margin-right: 10px;
+          }
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+      }
+      &__form {
+        padding-bottom: 50px;
+        input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+        button {
+          width: 230px;
+          font-family: inherit;
+          cursor: pointer;
+          font-size: 18px;
+          background-color: #4caf50 !important;
+          color: #fff !important;
+          padding: 10px;
+          border: none;
+          &:hover {
+            background-color: #f1f1f1 !important;
+            color: black !important;
+          }
+        }
+      }
+    }
+    &__filtered {
+      filter: brightness(0.5);
+    }
+  }
+  &__footer {
+    padding: 16px;
+    margin-left: 260px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .app {
+    &__navigation {
+      display: none;
+    }
+    &__navigation__mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 50px;
+      background-color: black;
+      font-weight: bold;
+      &__logo {
+        margin-left: 50px;
+        color: white;
+      }
+      &__burger {
+        margin-right: 50px;
+        color: white;
+      }
+    }
+    &__main {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .app {
+    &__navigation {
+      display: block;
+    }
+  }
+}
