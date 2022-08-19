@@ -65,7 +65,7 @@
       }
     }
   }
-  &__navigation__mobile {
+  &__navigation__mobile{
     display: none;
   }
   &__main {
@@ -245,6 +245,70 @@
     padding: 16px;
     margin-left: 260px;
   }
+  &__subscribe__modal {
+    position: fixed;
+    display: none;
+    z-index: 99999;
+    padding: 12px 24px !important;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &__content {
+      &__header {
+        text-align: center;
+        margin: 10px 0;
+        &__item {
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-family: inherit;
+          font-size: 48px;
+          font-weight: 300;
+          color: black;
+        }
+      }
+      &__desc {
+        margin: 10px 0;
+        text-align: center;
+        &__item {
+        }
+      }
+      &__form {
+        margin: 10px 0;
+        &__input {
+          width: 100%;
+          border: 1px solid lightgrey;
+          padding: 10px;
+        }
+        &__button {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          &__item {
+            width: 240px;
+            background-color: #4caf50 !important;
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 15px;
+            cursor: pointer;
+            &:hover {
+              background-color: grey !important;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal__active{
+    display: block !important;
+  }
 }
 @media only screen and (max-width: 992px) {
   .app {
@@ -278,7 +342,7 @@
 @media only screen and (min-width: 992px) {
   .app {
     &__navigation {
-      display: block;
+      display: block !important;
     }
   }
 }

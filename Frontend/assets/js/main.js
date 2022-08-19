@@ -29,4 +29,18 @@ main.addEventListener("click", function () {
     mainNavigation.style.display = "none";
     appMain.classList.remove("app__main__filtered");
   }
+  if (modal.classList.contains("modal__active")) {
+    appMain.classList.remove("app__main__filtered");
+    modal.classList.remove("modal__active");
+  }
 });
+const modalBtns = document.getElementsByClassName("app__modal__trigger");
+const modal = document.getElementById("app__modal");
+for (let i = 0; i < modalBtns.length; i++) {
+  modalBtns[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log("triggered!");
+    modal.classList.add("modal__active");
+  });
+}
+//modal__active

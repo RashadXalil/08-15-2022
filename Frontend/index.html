@@ -106,7 +106,7 @@
                 >
               </li>
               <li class="app__navigation__links__wrapper__item">
-                <a href="#" class="app__navigation__links__wrapper__item__link"
+                <a href="#" class="app__navigation__links__wrapper__item__link app__modal__trigger"
                   ><i class="fa-solid fa-rss"></i>Subscribe</a
                 >
               </li>
@@ -272,7 +272,7 @@
                   offers.
                 </div>
                 <div class="app__main__rules__button">
-                  <button class="app__main__rules__button__item">
+                  <button class="app__main__rules__button__item app__modal__trigger">
                     Subscribe
                   </button>
                 </div>
@@ -318,6 +318,39 @@
           </section>
         </main>
         <!-- Main End  -->
+        <div class="app__subscribe__modal" id="app__modal">
+          <div class="app__subscribe__modal__content">
+            <div class="app__subscribe__modal__content__header">
+              <h3 class="app__subscribe__modal__content__header__item">
+                Subscribe
+              </h3>
+            </div>
+            <div class="app__subscribe__modal__content__desc">
+              <p class="app__subscribe__modal__content__desc__item">
+                Join our mailing list to receive updates on available dates and
+                special offers.
+              </p>
+            </div>
+            <form
+              action="subscribe"
+              class="app__subscribe__modal__content__form"
+            >
+              <input
+                type="text"
+                placeholder="Enter Email..."
+                class="app__subscribe__modal__content__form__input"
+                aria-label="enter email"
+              />
+              <div class="app__subscribe__modal__content__form__button">
+                <button
+                  class="app__subscribe__modal__content__form__button__item"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
         <!-- Footer End -->
         <footer class="app__footer">Powered by <a href="#">w3.css</a></footer>
         <!-- Footer End -->
