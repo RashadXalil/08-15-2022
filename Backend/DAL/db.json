@@ -1,0 +1,35 @@
+{
+  "Apartment": [
+    {
+      "id": 1,
+      "maxPeople": 4,
+      "bathRooms": 2,
+      "bedRooms": 1,
+      "checkIn": "3PM",
+      "checkOut": "12PM",
+      "rooms": [
+        {
+          "id": 1,
+          "path": "http://localhost:8080/public/images/livingroom.jpg",
+          "title": "Living Room"
+        },
+        {
+          "id": 2,
+          "path": "http://localhost:8080/public/images/diningroom.jpg",
+          "title": "Dining Room"
+        },
+        {
+          "id": 3,
+          "path": "http://localhost:8080/public/images/bedroom.jpg",
+          "title": "Bed Room"
+        },
+        {
+          "id": 4,
+          "path": "http://localhost:8080/public/images/livingroom2.jpg",
+          "title": "Living Room 2"
+        }
+      ]
+    }
+  ],
+  "Settings": [{}]
+}
