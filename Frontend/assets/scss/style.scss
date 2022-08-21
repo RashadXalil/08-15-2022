@@ -65,7 +65,7 @@
       }
     }
   }
-  &__navigation__mobile{
+  &__navigation__mobile {
     display: none;
   }
   &__main {
@@ -86,8 +86,15 @@
     &__images {
       &__thumb {
         margin-bottom: 15px;
+        position: relative;
         img {
           width: 100%;
+        }
+        &__title {
+          position: absolute;
+          &__item {
+            color: red;
+          }
         }
       }
       .active__image {
@@ -306,7 +313,7 @@
       }
     }
   }
-  .modal__active{
+  .modal__active {
     display: block !important;
   }
 }

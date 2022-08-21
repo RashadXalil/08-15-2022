@@ -133,7 +133,14 @@
               <img src="/public/images/bedroom.jpg" alt="" />
             </div>
             <div class="row">
-              <div class="col-3">
+               {{#each apartment.rooms}}
+               <div class="col-3">
+                <div class="app__main__images__single active__image">
+                  <img width="100%" src={{this.path}} alt="" />
+                </div>
+              </div>
+               {{/each}}
+              {{!-- <div class="col-3">
                 <div class="app__main__images__single">
                   <img width="100%" src="/public/images/livingroom.jpg" alt="" />
                 </div>
@@ -156,7 +163,7 @@
                     alt=""
                   />
                 </div>
-              </div>
+              </div> --}}
             </div>
           </section>
           <section class="app__main__the__space">
@@ -168,13 +175,13 @@
                 <ul class="app__main__the__space__features">
                   <li class="app__main__the__space__features__item">
                     <i class="fa-solid fa-person"></i>
-                    <span>Max People : 4</span>
+                    <span>Max People : {{apartment.maxPeople}}  </span>
                   </li>
                   <li class="app__main__the__space__features__item">
-                    <i class="fa-solid fa-bath"></i> <span>Bathrooms : 2</span>
+                    <i class="fa-solid fa-bath"></i> <span>Bathrooms : {{apartment.bathRooms}}</span>
                   </li>
                   <li class="app__main__the__space__features__item">
-                    <i class="fa-solid fa-bed"></i> <span>Bedrooms : 1</span>
+                    <i class="fa-solid fa-bed"></i> <span>Bedrooms : {{apartment.bedRooms}}</span>
                   </li>
                 </ul>
               </div>
@@ -182,11 +189,11 @@
                 <ul class="app__main__the__space__features">
                   <li class="app__main__the__space__features__item">
                     <i class="fa-regular fa-clock"></i>
-                    <span> Check In: After 3PM</span>
+                    <span> Check In: After {{apartment.checkIn}}</span>
                   </li>
                   <li class="app__main__the__space__features__item">
                     <i class="fa-regular fa-clock"></i>
-                    <span> Check Out: 12PM</span>
+                     <span> Check Out: {{apartment.checkOut}}</span>
                   </li>
                 </ul>
               </div>
